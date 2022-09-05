@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Checkout Source') {
             steps {
-                git 'https://github.com/Bitsify/nodeapp_test.git'
+                git 'https://github.com/Bitsify/Nodejs-Tomcat-Jenkings-K8s.git'
             }
         }
         stage('Build image') {
