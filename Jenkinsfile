@@ -31,7 +31,8 @@ pipeline {
         }
         stage('Executing script on jenking container') {
                   steps {
-                    sh './k8s.sh'
+                      sh 'chmod u+x k8s'
+                      sh './k8s.sh'
       }
         }
     }
